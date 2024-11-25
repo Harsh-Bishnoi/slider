@@ -74,7 +74,7 @@
         </div>
     </section>
     <section class="section-2">
-        <div class="container">
+        <div class="container w-100">
             <div class="justify-content-center d-flex">
                 <div class="head">Trusted by Thousands of Happy Customer</div>
             </div>
@@ -295,24 +295,26 @@
             prevArrow: ".previous",
             nextArrow: ".next",
             speed: 400,
-            // responsive: [
-            //     {
-            //         breakpoint: 1024,
-            //         settings: {
-            //             slidesToShow: 2,
-            //             slidesToScroll: 1,
-            //             infinite: true,
-            //             dots: true
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 768,
-            //         settings: {
-            //             slidesToShow: 1,
-            //             slidesToScroll: 1,
-            //         }
-            //     },
-            // ]
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+            ]
         });
         $('.third-slider').slick({
             centerMode: true,
