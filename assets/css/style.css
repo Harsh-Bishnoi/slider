@@ -97,11 +97,6 @@ section {
     border-radius: 21px;
 }
 
-/* .section-1 .slick-dots {
-    position: absolute;
-    bottom: -10%;
-} */
-
 .section-1 .slick-slide.slick-current.slick-active {
     border: 1px solid #1219D2 !important;
 }
@@ -243,7 +238,7 @@ section {
 .section-2 .slick-dots {
     position: absolute;
     right: 38.5%;
-    bottom: -30%;
+    bottom: -15%;
 }
 
 .section-2 .slick-slide.slick-current.slick-active {
@@ -312,7 +307,7 @@ section {
 }
 
 .card-4 {
-    width: 946px;
+    max-width: 946px;
     height: 253px;
     border-radius: 20px;
     background-color: #0389FF1F;
@@ -337,8 +332,6 @@ section {
     line-height: 30px;
     text-align: center;
     color: #FBFDFF;
-    padding-left: 56px;
-    padding-right: 56px;
     padding-top: 80px;
 }
 
@@ -370,11 +363,6 @@ section {
     width: 10px !important;
     height: 10px !important;
     border-radius: 28px;
-}
-
-.section-3 .slick-dots {
-    position: absolute;
-    bottom: -30%;
 }
 
 .section-3 .slick-dots li button {
