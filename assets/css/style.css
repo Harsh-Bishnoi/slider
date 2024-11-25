@@ -97,10 +97,10 @@ section {
     border-radius: 21px;
 }
 
-.section-1 .slick-dots {
+/* .section-1 .slick-dots {
     position: absolute;
     bottom: -10%;
-}
+} */
 
 .section-1 .slick-slide.slick-current.slick-active {
     border: 1px solid #1219D2 !important;
@@ -129,7 +129,7 @@ section {
     justify-content: space-between;
 }
 
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
 
@@ -295,6 +295,14 @@ section {
 
 .next:hover path {
     fill: white;
+}
+
+.pl-40 {
+    padding-left: 40px;
+}
+
+.gap-10 {
+    gap: 10px;
 }
 
 /***** section 3 *****/

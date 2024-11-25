@@ -17,7 +17,7 @@
 
 <body>
     <section class="bg-color section-1">
-        <div class="container position-relative">
+        <div class="container position-relative w-100">
             <div class="meet pb-50">Meet Our Team</div>
             <div class="first-slider">
                 <div class="card">
@@ -95,7 +95,7 @@
                                 <div class="country">Warsaw, Poland</div>
                             </div>
                         </div>
-                        <div class="d-flex ">
+                        <div class="d-flex pl-40 gap-10">
                             <div class="number">4.5</div>
                             <img src="./assets/images/star.svg" alt="">
                         </div>
@@ -115,7 +115,7 @@
                                 <div class="country">Shanxi, China</div>
                             </div>
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex pl-40 gap-10">
                             <div class="number">4.5</div>
                             <img src="./assets/images/star.svg" alt="">
                         </div>
@@ -134,7 +134,7 @@
                                 <div class="country">Seoul, South Korea</div>
                             </div>
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex pl-40 gap-10">
                             <div class="number">4.5</div>
                             <img src="./assets/images/star.svg" alt="">
                         </div>
@@ -154,7 +154,7 @@
                                 <div class="country">Warsaw, Poland</div>
                             </div>
                         </div>
-                        <div class="d-flex ">
+                        <div class="d-flex pl-40 gap-10">
                             <div class="number">4.5</div>
                             <img src="./assets/images/star.svg" alt="">
                         </div>
@@ -174,7 +174,7 @@
                                 <div class="country">Shanxi, China</div>
                             </div>
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex pl-40 gap-10">
                             <div class="number">4.5</div>
                             <img src="./assets/images/star.svg" alt="">
                         </div>
@@ -193,7 +193,7 @@
                                 <div class="country">Seoul, South Korea</div>
                             </div>
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex pl-40 gap-10">
                             <div class="number">4.5</div>
                             <img src="./assets/images/star.svg" alt="">
                         </div>
@@ -257,8 +257,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
     <script>
         $('.first-slider').slick({
             infinite: true,
@@ -266,6 +266,25 @@
             slidesToScroll: 1,
             arrows: false,
             dots: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+            ]
         })
         $('.second-slider').slick({
             infinite: true,
@@ -276,14 +295,52 @@
             prevArrow: ".previous",
             nextArrow: ".next",
             speed: 400,
-        })
+            // responsive: [
+            //     {
+            //         breakpoint: 1024,
+            //         settings: {
+            //             slidesToShow: 2,
+            //             slidesToScroll: 1,
+            //             infinite: true,
+            //             dots: true
+            //         }
+            //     },
+            //     {
+            //         breakpoint: 768,
+            //         settings: {
+            //             slidesToShow: 1,
+            //             slidesToScroll: 1,
+            //         }
+            //     },
+            // ]
+        });
         $('.third-slider').slick({
             centerMode: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
             dots: true,
-        })
+            // responsive: [
+            //     {
+            //         breakpoint: 768,
+            //         settings: {
+            //             arrows: false,
+            //             centerMode: true,
+            //             centerPadding: '40px',
+            //             slidesToShow: 1
+            //         }
+            //     },
+            //     {
+            //         breakpoint: 480,
+            //         settings: {
+            //             arrows: false,
+            //             centerMode: true,
+            //             centerPadding: '40px',
+            //             slidesToShow: 1
+            //         }
+            //     }
+            // ]
+        });
     </script>
 </body>
 
