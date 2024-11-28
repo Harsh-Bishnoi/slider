@@ -105,6 +105,11 @@ section {
     display: none !important;
 }
 
+.section-1 .slick-dots {
+    position: absolute;
+    bottom: -8%;
+}
+
 .section-1 .slick-dots li.slick-active {
     background-color: #1219D2 !important;
     width: 59px !important;
@@ -215,7 +220,7 @@ section {
     border: 2px solid #DDDDDD;
     border-radius: 10px;
     max-width: 400px;
-    height: 400px;
+    /* height: 400px; */
     margin-top: 60px;
 }
 
@@ -252,6 +257,11 @@ section {
 .section-2 .slick-dots li.slick-active {
     background-color: #F53838 !important;
     width: 45px !important;
+}
+
+.section-2 .slick-dots {
+    position: absolute;
+    bottom: -25%;
 }
 
 .previous {
@@ -358,6 +368,10 @@ section {
     gap: 24px !important;
 }
 
+.section-3 .slick-slide.slick-current.slick-active {
+    background-image: url(../images/section-3-ellipse.svg);
+}
+
 .section-3 .slick-dots li {
     background-color: #E3E4E5;
     width: 10px !important;
@@ -372,4 +386,65 @@ section {
 .section-3 .slick-dots li.slick-active {
     background-color: #0389FF !important;
     width: 53px !important;
+}
+
+.section-3 .slick-dots {
+    position: absolute;
+    bottom: -30%;
+}
+
+@media (min-width:768px) {
+    .section-3 .third-slider .card-4 {
+        max-width: 640px;
+    }
+}
+
+@media (min-width:992px) {
+    .section-3 .third-slider .card-4 {
+        max-width: 946px;
+    }
+}
+
+@media (max-width:577px) {
+    .section-2 .slick-dots {
+        position: absolute;
+        bottom: -6%;
+        right: 1%;
+    }
+
+    .previous {
+        display: none;
+    }
+
+    .next {
+        display: none;
+    }
+}
+
+@media (max-width:577px) {
+    .section-2 .slick-dots {
+        position: absolute;
+        bottom: -16%;
+    }
+}
+
+@media (max-width:388px) {
+    .section-2 .slick-dots {
+        position: absolute;
+        bottom: -8%;
+    }
+}
+
+@media (max-width:1024px) {
+    .section-1 .slick-dots {
+        position: absolute;
+        bottom: -4%;
+    }
+}
+
+@media (max-width:392px) {
+    .section-1 .slick-dots {
+        position: absolute;
+        bottom: -8%;
+    }
 }
