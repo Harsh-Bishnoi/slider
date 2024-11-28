@@ -97,7 +97,7 @@ section {
     border-radius: 21px;
 }
 
-.section-1 .slick-slide.slick-current.slick-active {
+.section-1 .slick-slide.slick-current.slick-active +div {
     border: 1px solid #1219D2 !important;
 }
 
@@ -246,7 +246,7 @@ section {
     bottom: -15%;
 }
 
-.section-2 .slick-slide.slick-current.slick-active {
+.section-2 .slick-slide.slick-current.slick-active{
     border: 2px solid #F53838 !important;
 }
 
@@ -412,13 +412,13 @@ section {
         right: 1%;
     }
 
-    .previous {
+    /* .previous {
         display: none;
     }
 
     .next {
         display: none;
-    }
+    } */
 }
 
 @media (max-width:577px) {
